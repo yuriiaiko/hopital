@@ -9,7 +9,8 @@ trigger:
 pool:
   name: Default
   demands:
-  - agent.name -equals YURIII  
+  - agent.name -equals YURIII 
+  - Maven 
 
 
 steps:
@@ -23,3 +24,5 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+  
+

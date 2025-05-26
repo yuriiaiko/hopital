@@ -7,9 +7,9 @@ trigger:
 - main
 
 pool:
-  name: Default
+  name: Azure Pipelines
   demands:
-  - agent.name -equals YURIII 
+  - agent.name -equals Hosted Agent 
   - Maven 
 
 
